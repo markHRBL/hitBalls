@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Game</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .score-text {
+            position: fixed;
+            top: 25px;
+            left: 35px;
+
+            color: white;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            user-select: none;
+        }
+
+        .best-score-text {
+            top: 65px;
+        }
+    </style>
+</head>
+<body>
+    <div class="score-text"><span>Score: </span><span id="scoreElem">0</span></div>
+    <div class="best-score-text score-text"><span>Best Score: </span><span id="bestScoreElem">0</span></div>
+    <canvas></canvas>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
