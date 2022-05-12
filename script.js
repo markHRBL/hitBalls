@@ -243,5 +243,9 @@ addEventListener('click', e => {
     projectiles.push(projectile);
 });
 
+addEventListener('resize', () => {
+    location.reload();
+});
+
 animate();
 spawnEnemies();
